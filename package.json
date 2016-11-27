@@ -2,11 +2,13 @@
   "name": "create-react-app-practice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kmdsbng.github.io/create-react-app-practice",
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "enzyme": "^2.6.0",
+    "gh-pages": "^0.12.0",
     "react-addons-test-utils": "^15.4.1",
-    "react-scripts": "0.7.0",
-    "@kadira/storybook": "^2.21.0"
+    "react-scripts": "0.7.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
@@ -20,7 +22,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
